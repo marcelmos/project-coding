@@ -1,7 +1,11 @@
 // Base body style
-body {
+*, *::before, *::after{
     max-width: 100vw;
     overflow-x: hidden;
+}
+
+body {
+    // overflow-x: hidden;
     font-family: 'Sen', sans-serif;
     font-weight: 400;
     background-color: $bg-light;
