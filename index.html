@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!-- Google Fonts -->
+        <link href="https://fonts.googleapis.com/css2?family=Sen:wght@400;700;800&display=swap" rel="stylesheet">
+        <!-- FontAwesome -->
+        <script src="https://kit.fontawesome.com/cbb96ef56b.js" crossorigin="anonymous"></script>
+
+        <title>logo</title>
+        <!-- Bootstrap -->
+        <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
+        <!-- Style -->
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/modal-style.css">
+    </head>
+
+
+
+    <body>
+        <!-- Navigation -->
+        <nav class="navigation">
+            <div class="container">
+                <div class="nav-logo">
+                    <a href="#" class="nav-link"><img src="images/logo/dark.svg"></a>
+                </div>
+
+                <ul class="nav-item-list">
+                    <li class="nav-item active"><a href="#" class="nav-link"><span>ICO</span></a></li>
+                    <li class="nav-item"><a href="#" class="nav-link"><span>Team</span></a></li>
+                    <li class="nav-item"><a href="#" class="nav-link"><span>Contact</span></a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <!-- Floating fixed social media buttons -->
+        <div class="social-media">
+            <ul>
+                <a href="https://twitter.com/"><li class="fixed-btn"><i class="fab fa-twitter"></i></li></a>
+                <a href="https://www.facebook.com/"><li class="fixed-btn"><i class="fab fa-facebook-f"></i></li></a>
+            </ul>
+        </div>
+
+        <!-- Hero section -->
+        <div class="top-section">
+            <div class="container">
+                <!-- Main content -->
+                <div class="row">
+                    <!-- Newsletter subscription -->
+                    <div class="col-lg-6 newsletter-section">
+                        <div class="col-12">
+                            <h2>The first fully-automatic social crypto trading platform with real crypto currency</h2>
+                        </div>
+                        <div class="col-12 signin">
+                            <p>Subscribe and get the lastes information</p>
+                            <div class="newsletter-input">
+                                <input type="text" id="singin-newsletter" placeholder="Enter your email">
+                                <button class="custom-btn btn-subscribe" onClick="newsletterJoin()">Subscribe</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Down arrow -->
+                    <div class="col-12 order-lg-12 text-center">
+                        <img src="images/icons/downArrow.svg" class="go-down" alt="Go Down">
+                    </div>
+
+                    <!-- Wideo section -->
+                    <div class="col-lg-6 order-lg-1 modal-section">
+                        <button class="open-modal" data-toggle="modal" data-target="#videoModal">
+                            <img src="images/583830686.png" class="img-fluid" alt="Video">
+                        </button>
+
+                        <!-- Modal with video -->
+                        <div class="modal fade" id="videoModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered modal-lg">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <img src="images/icons/X circle.svg" alt="X">
+                                        </button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <div class="embed-responsive embed-responsive-16by9">
+                                            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/B4dnPVZ2MV0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="team-section">
+            <div class="container">
+                <!-- Section Title -->
+                <div class="row">
+                    <div class="col-12">
+                        <h4 class="section-title">Team</h4>
+                    </div>
+                </div>
+
+                <!-- Personal cards -->
+                <div class="row flex-row flex-nowrap team-display">
+                    <div class="personal-card">
+                        <section data-toggle="modal" data-target=".team-ceo">
+                            <img src="images/team/morrison_photo.png" alt="photo">
+                            <div class="team-data">
+                                <p class="team-name">Edgar Morrison</p>
+                                <p class="team-level">CEO</p>
+                            </div>
+                            <p class="team-lead">
+                                Having used discount toner cartridges for twenty years, there have been a lot of changes in the toner...
+                            </p>
+                        </section>
+                        <a href="https://www.facebook.com/" class="team-btn-social"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://linkedin.com" class="team-btn-social"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+
+                    <div class="personal-card">
+                        <section data-toggle="modal" data-target=".team-cto">
+                            <img src="images/team/martin_photo.png" alt="photo">
+                            <div class="team-data">
+                                <p class="team-name">Mae Martin</p>
+                                <p class="team-level">CTO</p>
+                            </div>
+                            <p class="team-lead">
+                                Having used discount toner cartridges for twenty years, there have been a lot of changes in the toner...
+                            </p>
+                        </section>
+                        <a href="https://www.facebook.com/" class="team-btn-social"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://linkedin.com" class="team-btn-social"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+
+                    <div class="personal-card">
+                        <section data-toggle="modal" data-target=".team-cfo">
+                            <img src="images/team/banks_photo.png" alt="photo">
+                            <div class="team-data">
+                                <p class="team-name">David Banks</p>
+                                <p class="team-level">CFO</p>
+                            </div>
+                            <p class="team-lead">
+                                Having used discount toner cartridges for twenty years, there have been a lot of changes in the toner...
+                            </p>
+                        </section>
+                        <a href="https://www.facebook.com/" class="team-btn-social"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://linkedin.com" class="team-btn-social"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+
+                    <div class="personal-card">
+                        <section data-toggle="modal" data-target=".team-coo">
+                            <img src="images/team/parsons_photo.png" alt="photo">
+                            <div class="team-data">
+                                <p class="team-name">Frederick Parsons</p>
+                                <p class="team-level">Coo</p>
+                            </div>
+                            <p class="team-lead">
+                                Having used discount toner cartridges for twenty years, there have been a lot of changes in the toner...
+                            </p>
+                        </section>
+                        <a href="https://www.facebook.com/" class="team-btn-social"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://linkedin.com" class="team-btn-social"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Contact -->
+        <div class="contact-section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <h4 class="section-title .dark-theme">Contact us</h4>
+                    </div>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-4 contact-text">
+                        Most calendars are designed for teams. Slate is designed for freelancers
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12 col-lg-4 col-lg-offset-4 contact-form">
+                        <input type="text" id="contact-name" placeholder="Your Name">
+                        <input type="text" id="contact-mail" placeholder="Your Email">
+                        <div class="checkbox-custom">
+                            <input type="checkbox" id="checkbox" name="check">
+                            <label for="todo">Checkbox</label>
+                        </div>
+                        <button class="custom-btn" onClick="contact()">Send</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            <div class="container">
+                <div class="row footer-section-top">
+                    <div class="col-sm-12 col-md-4 logo">
+                        <img src="images/logo/dark.svg" alt="logo">
+                    </div>
+                    <div class="col-sm-12 col-md-4 email">
+                        <p>Contact us:</p>
+                        <a href="mailto:have@nicecoding.io">have@nicecoding.io</a>
+                    </div>
+                    <div class="col-sm-12 col-md-4 read-more">
+                        <button class="custom-btn">Read Whitepaper</button>
+                    </div>
+                </div>
+                <div class="row footer-links">
+                    <div class="col-6 col-md-3"><a href="#">© Copywriters  2020</a></div>
+                    <span class="breaker"></span>
+                    <div class="col-6 col-md-3"><a href="#">FAQ</a></div>
+                    <span class="breaker"></span>
+                    <div class="col-6 col-md-3"><a href="#">Terms of Use</a></div>
+                    <span class="breaker"></span>
+                    <div class="col-6 col-md-3"><a href="#">Private Policy</a></div>
+                </div>
+            </div>
+        </footer>
+
+        <!-- TEAM MODALS -->
+        <!-- Modal Edgar -->
+        <div class="modal fade team-ceo" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <section>
+                            <h5 class="team-name center-text">Edgar Morrison</h5>
+                            <p class="team-level">Ceo</p>
+                        </section>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <img src="images/icons/X circle.svg" alt="X">
+                    </button>
+                    </div>
+                    <div class="modal-body">
+                        Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet. Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet. Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet. Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet. Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet. Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet. Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet. Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Modal Mae -->
+        <div class="modal fade team-cto" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <section>
+                            <h5 class="team-name center-text">Mae Martin</h5>
+                            <p class="team-level">Cto</p>
+                        </section>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <img src="images/icons/X circle.svg" alt="X">
+                    </button>
+                    </div>
+                    <div class="modal-body">
+                        Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet. Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet. Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet. Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet. Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet. Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet. Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet. Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Modal David -->
+        <div class="modal fade team-cfo" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <section>
+                            <h5 class="team-name center-text">David Banks</h5>
+                            <p class="team-level">Cfo</p>
+                        </section>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <img src="images/icons/X circle.svg" alt="X">
+                    </button>
+                    </div>
+                    <div class="modal-body">
+                        Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet. Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet. Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet. Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet. Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet. Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet. Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet. Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Modal Frederick-->
+        <div class="modal fade team-coo" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <section>
+                            <h5 class="team-name center-text">Frederick Parsons</h5>
+                            <p class="team-level">COO</p>
+                        </section>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <img src="images/icons/X circle.svg" alt="X">
+                    </button>
+                    </div>
+                    <div class="modal-body">
+                        Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet. Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet. Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet. Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet. Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet. Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet. Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet. Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="bootstrap/js/bootstrap.js"></script>
+
+    <script src="scripts/script.js"></script>
+
+</html>

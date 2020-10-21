@@ -1,0 +1,156 @@
+.top-section{
+    @include size(100%, 100%);
+    color: $text-lightest;
+    font-weight: 400;
+    margin-bottom: 170px;
+
+    @media (max-width: 768px) {
+        margin-bottom: 35px;
+    }
+
+    // Background - Shape 2
+    &::before{
+        content: url("../images/Shape2.svg");
+        // @include block;
+        @include absolute(-150px, none, none, 0);
+        @include transition;
+        z-index: -1;
+
+        @media (max-width: 780px){
+            @include absolute(-300px, none, none, -450px);
+            @include transition;
+        }
+    }
+    // Background - Shape 1
+    &::after{
+        content: url("../images/Shape1.svg");
+        // @include block;
+        @include absolute(-150px, none, none, 50px);
+        transform: scale(1.2);
+        @include transition;
+        z-index: -1;
+
+        @media (max-width: 780px){
+            @include absolute(-50px, none, none, -100px);
+            @include transition;
+        }
+    }
+
+    // .container{
+    //     // margin-top: 104px;
+    // }
+
+    // Sign to newsletter
+    .newsletter-section{
+        margin-top: 100px;
+
+        @media (max-width: 1000px){
+            margin: 0;
+        }
+
+        h2{
+            font-weight: 700;
+            font-size: 40px;
+            @media (max-width: 520px){
+                font-size: 24px;
+            }
+        }
+
+        .signin{
+            @include margin-padding(48px 0 0 0, 0 15px 0 15px);
+            @media (min-width: 520px){
+                @include margin-padding(74px 0 39 0, 0 15px 0 15px);
+            }
+
+            p{
+                opacity: .7;
+            }
+        }
+    }
+
+    .newsletter-input{
+        width: 100%;
+        background-color: $text-lightest;
+        @include border($input-radius);
+        display: flex;
+        justify-content: space-between;
+        @media (max-width: 520px){
+            background-color: transparent;
+            display: inline;
+        }
+
+        input{
+            width: calc(100% - 136px);
+            @media (max-width: 520px){
+                width: 100%;
+            }
+        }
+
+        .btn-subscribe{
+            @media (max-width: 520px){
+                width: 100%;
+                margin-top: 16px;
+            }
+        }
+    }
+
+    // Modal btn
+    .modal-section{
+        max-width: 544px;
+        max-height: 382px;
+        margin-left: auto;
+        margin-right: auto;
+
+        img{
+            @include border(6px);
+        }
+        .open-modal{
+            &::before{
+                content: url("../images/icons/playBtn.svg");
+                z-index: 10;
+                position: absolute;
+                top: 30%;
+                left: 50%;
+                transform: translateX(-50%);
+            }
+
+        }
+    }
+}
+
+.go-down{
+    margin-top: 124px;
+    animation: MoveUpDown 1s infinite  alternate;
+    -moz-animation: MoveUpDown 1s infinite  alternate; /* Firefox */
+    -webkit-animation: MoveUpDown 1s infinite  alternate; /* Safari and Chrome */
+    -o-animation: MoveUpDown 1s infinite  alternate; /* Opera */
+    position: relative;
+
+    @media(max-width: 992px){
+        @include margin-padding(39px 0 73px 0, 0);
+    }
+
+    @media (max-width: 768px) {
+        margin-top: 124px;
+        margin-bottom: 184px;
+    }
+
+    @media(max-width: 520px){
+        transform: scale(.75);
+        margin-top: 39px;
+        margin-bottom: 85px;
+    }
+
+    &:hover{
+        cursor: pointer;
+    }
+}
+
+@keyframes MoveUpDown {
+    0%, 100% {
+        bottom: 0;
+    }
+    50% {
+        bottom: 100px;
+    }
+}

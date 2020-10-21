@@ -1,0 +1,71 @@
+// Base body style
+body {
+    max-width: 100vw;
+    overflow-x: hidden;
+    font-family: 'Sen', sans-serif;
+    font-weight: 400;
+    background-color: $bg-light;
+    background-image: url("../images/Mask.svg");
+    background-repeat: no-repeat;
+    background-size: 1920px auto;
+    background-position: -260px -350px;
+    transition: background-position 2s ease-in-out;
+    @include margin-padding(70px 0 0 0, 70px 0 0 0);
+
+    @media (max-width: 520px) {
+        background-position: 0 -350px;
+        transition: background-position 2s ease-in-out;
+    }
+}
+
+// Global style
+.section-title{
+    @include center;
+    @include font-style($text-dark, 16px, 0, 34px);
+    letter-spacing: 12px;
+    text-transform: uppercase;
+}
+
+
+.custom-btn{
+    background-color: $bg-accent;
+    @include border($input-radius);
+    @include font-style($text-lightest, 17px, 600, 22px);
+    font-family: Open Sans;
+    @include margin-padding(0, 13px 28px);
+
+    &:hover{
+        color: $text-lightest;
+        text-decoration: none;
+    }
+}
+
+button {
+    @include margin-padding(0, 0);
+    @include border(0);
+    background-color: transparent;
+}
+
+input{
+    @include size(auto, 48px);
+    @include border($input-radius);
+    @include font-style($text-gray, 17px, 0, 48px);
+    @include margin-padding(0, 12px 20px);
+}
+
+ul {
+    @include margin-padding(0, 0);
+    li{
+        list-style-type: none;
+    }
+}
+
+.nav-logo, .footer-section-top .logo{
+    img{
+        @include size(96px, 39px);
+
+        @media(max-width: 520px){
+            @include size(56px, 22px);
+        }
+    }
+}

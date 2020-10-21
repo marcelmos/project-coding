@@ -1,0 +1,77 @@
+// Team Section
+.team-section{
+    @include center;
+    margin-bottom: 88px;
+
+    .section-title{
+        margin-top: 0;
+    }
+}
+
+.team-display{
+    margin: auto;
+    overflow-x: scroll;
+
+    // Scrollbar hide
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+
+    &::-webkit-scrollbar{
+        display: none;
+    }
+}
+
+.personal-card{
+    margin: 0 3px;
+    max-width: 270px;
+    min-width: 136px;
+
+    img{
+        @include size(131px, 131px);
+        @include border(50%);
+
+        @media (max-width: 520px) {
+            @include size(115px, 115px);
+        }
+
+    }
+}
+
+.team-data{
+    @include margin-padding(16px, 0);
+}
+
+.team-name{
+    @include font-style(#38A5DB, 24px, 0, 34px);
+    margin-bottom: 0;
+    white-space: nowrap;
+
+    @media (max-width: 520px) {
+        font-size: 16px;
+    }
+}
+// Text under Name (CEO, CTO, COO...)
+.team-level{
+    @include font-style($text-darkest, 13px, 0, 17px);
+    opacity: 0.5;
+    letter-spacing: 0.26px;
+    text-transform: uppercase;
+}
+
+.team-lead{
+    @include font-style(#45515F, 18px, 0, 24px);
+
+    @media (max-width: 520px) {
+        font-size: 12px;
+        line-height: 18px;
+    }
+}
+
+.team-btn-social{
+    @include size(43px, 23px);
+    @include inline-block;
+    border: 1px solid #7F8B98;
+    border-radius: 3px;
+    @include center;
+    @include font-style(#000, 13, 0, 23px);
+}

@@ -1,0 +1,84 @@
+// Contact sectioon
+.contact-section{
+    background-color: $bg-darkest;
+    padding-top: 88px;
+    padding-bottom: 55px;
+    color: $text-lightest;
+
+    @media (max-width: 768px) {
+        padding-top: 88px;
+        padding-bottom: 78px;
+    }
+
+    .section-title{
+        color: #fff;
+    }
+}
+
+.contact-form{
+    background-color: $bg-dark;
+    @include margin-padding(50px auto 0 auto, 84px 41px 26px 41px);
+    @include border(14px);
+    min-width: 288px !important;
+    max-width: 401px;
+
+    @media (max-width: 520px) {
+        @include margin-padding(50px auto 78px auto, 84px 16px 26px 16px);
+    }
+    input{
+        margin-bottom: 24px;
+    }
+    input[type="text"]{
+        width: 100%;
+    }
+}
+
+.contact-text{
+    @include center;
+}
+
+// Custom checkbox
+.checkbox-custom{
+    display: flex;
+
+    input[type="checkbox"] {
+    position: relative;
+    @include size(24px, 24px);
+    @include border(4px);
+    background-color: #fff;
+    appearance: none;
+    outline: 0;
+    cursor: pointer;
+    &::before {
+        // position: absolute;
+        content: '';
+        @include absolute(2px, none, none, 7px);
+        @include size(8px, 14px);
+        display: block;
+        border-style: solid;
+        border-color: $bg-dark;
+        border-width: 0 2px 2px 0;
+        transform: rotate(45deg);
+        opacity: 0;
+        transition: opacity .1s ease-in-out;
+    }
+    &:checked {
+        color: #fff;
+        border-color: #fff;
+        background: #fff;
+        &::before {
+        opacity: 1;
+        transition: opacity .1s ease-in-out;
+        }
+    }
+    }
+
+    label {
+    position: relative;
+    cursor: pointer;
+    font-size: 24px;
+    padding: 0 0.25em 0;
+    line-height: 24px;
+    user-select: none;
+    }
+}

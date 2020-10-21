@@ -1,0 +1,29 @@
+.social-media{
+    @include fixed(50%, 50px, none, none);
+    transform: translateY(-50%);
+    z-index: 1;
+
+    @media (max-width: 768px){
+        right: 10px;
+    }
+
+    li{
+        @include size(40px, 40px);
+        background-color: $bg-accent;
+        @include border(50%);
+        @include font-style($text-lightest, 22px, 0, 40px);
+        @include center;
+        @include margin-padding(12px 0 12px 0, 0);
+
+        @media (max-width: 520px){
+            @include size(30px, 30px);
+            font-size: 16px;
+            line-height: 30px;
+        }
+    }
+
+    a, a:hover{
+        color: $text-lightest;
+        text-decoration: none;
+    }
+}

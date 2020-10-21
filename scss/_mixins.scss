@@ -1,0 +1,79 @@
+@mixin size($width, $height){
+    width: $width;
+    height: $height;
+}
+
+@mixin margin-padding($margin, $padding){
+    @if($margin != "none"){
+        margin: $margin;}
+    @if($padding != "none"){
+        padding: $padding;}
+}
+
+@mixin font-style($color, $size, $weight, $line-height){
+    color: $color;
+    font-size: $size;
+    font-weight: $weight;
+    line-height: $line-height;
+
+    @if($weight == 0){
+        font-weight: 400;
+    }
+}
+
+@mixin center{
+    text-align: center;
+}
+
+@mixin border($radius) {
+    border: none;
+    border-radius: $radius;
+}
+
+@mixin inline-block {
+    display: inline-block;
+}
+
+@mixin block {
+    display: block;
+}
+
+@mixin absolute($t, $r, $b, $l) {
+    position: absolute;
+    @if($t != "none"){
+        top: $t;}
+    @if($r != "none"){
+        right: $r;}
+    @if($b != "none"){
+        bottom: $b;}
+    @if($l != "none"){
+        left: $l;}
+}
+
+@mixin fixed($t, $r, $b, $l) {
+    position: fixed;
+    @if($t != "none"){
+        top: $t;}
+    @if($r != "none"){
+        right: $r;}
+    @if($b != "none"){
+        bottom: $b;}
+    @if($l != "none"){
+        left: $l;}
+}
+
+@mixin relative($t, $r, $b, $l) {
+    position: relative;
+    @if($t != "none"){
+        top: $t;}
+    @if($r != "none"){
+        right: $r;}
+    @if($b != "none"){
+        bottom: $b;}
+    @if($l != "none"){
+        left: $l;}
+}
+
+@mixin transition {
+    transition: top 2s ease-in-out, left 2s ease-in-out;
+}
