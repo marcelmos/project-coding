@@ -1,6 +1,4 @@
 footer{
-    clear: both;
-    overflow: unset;
     @include size(100%, 225px);
     background: linear-gradient(180deg, #FAFBFF 0%, #EFF1F9 41.68%, #E9ECF6 49.59%, #CED3E8 93.91%);
     padding: 40px 136px 48px 136px;

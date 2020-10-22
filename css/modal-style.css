@@ -31,27 +31,3 @@
 .modal-header .close{
     margin-left: 0;
 }
-
-
-
-
-/* ANIMATION FOR DOWN BUTTON (NOT WORKING IN SCSS) */
-@media (min-width: 720px){
-    .go-down{
-        animation: MoveUpDown 3s infinite  alternate;
-        -moz-animation: MoveUpDown 3s infinite  alternate; /* Firefox */
-        -webkit-animation: MoveUpDown 3s infinite  alternate; /* Safari and Chrome */
-        -o-animation: MoveUpDown 3s infinite  alternate; /* Opera */
-        position: relative;
-    }
-}
-
-
-@keyframes MoveUpDown {
-    0%, 100% {
-        bottom: 0;
-    }
-    50% {
-        bottom: 50px;
-    }
-}

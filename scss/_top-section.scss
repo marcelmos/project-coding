@@ -1,3 +1,40 @@
+// Background shapes
+.background-shapes{
+    overflow: hidden;
+    // Background - Shape 2
+    &::before{
+        content: url("../images/Shape2.svg");
+        // overflow-x: visible;
+        // overflow-y: visible;
+        @include absolute(-150px, none, none, 0);
+        // @include transition;
+        z-index: -1;
+
+        @media (max-width: 780px){
+            @include absolute(-300px, none, none, -450px);
+        //     @include transition;
+        }
+    }
+    // Background - Shape 1
+    &::after{
+        content: url("../images/Shape1.svg");
+        // overflow-x: visible;
+        // overflow-y: visible;
+        @include absolute(-150px, none, none, 50px);
+        transform: scale(1.2);
+        // @include transition;
+        z-index: -1;
+
+        @media (max-width: 780px){
+            @include absolute(-50px, none, none, -100px);
+        //     @include transition;
+        }
+    }
+}
+
+
+
+
 .top-section{
     @include size(100%, 100%);
     color: $text-lightest;
@@ -9,32 +46,34 @@
     }
 
     // Background - Shape 2
-    &::before{
-        content: url("../images/Shape2.svg");
-        // @include block;
-        @include absolute(-150px, none, none, 0);
-        @include transition;
-        z-index: -1;
+    // &::before{
+    //     content: url("../images/Shape2.svg");
+    //     overflow-x: hidden;
+    //     // overflow-y: visible;
+    //     @include absolute(-150px, none, none, 0);
+    //     @include transition;
+    //     z-index: -1;
 
-        @media (max-width: 780px){
-            @include absolute(-300px, none, none, -450px);
-            @include transition;
-        }
-    }
-    // Background - Shape 1
-    &::after{
-        content: url("../images/Shape1.svg");
-        // @include block;
-        @include absolute(-150px, none, none, 50px);
-        transform: scale(1.2);
-        @include transition;
-        z-index: -1;
+    //     @media (max-width: 780px){
+    //         @include absolute(-300px, none, none, -450px);
+    //         @include transition;
+    //     }
+    // }
+    // // Background - Shape 1
+    // &::after{
+    //     content: url("../images/Shape1.svg");
+    //     overflow-x: hidden;
+    //     overflow-y: visible;
+    //     @include absolute(-150px, none, none, 50px);
+    //     transform: scale(1.2);
+    //     @include transition;
+    //     z-index: -1;
 
-        @media (max-width: 780px){
-            @include absolute(-50px, none, none, -100px);
-            @include transition;
-        }
-    }
+    //     @media (max-width: 780px){
+    //         @include absolute(-50px, none, none, -100px);
+    //         @include transition;
+    //     }
+    // }
 
     // .container{
     //     // margin-top: 104px;
@@ -120,11 +159,11 @@
 
 .go-down{
     margin-top: 124px;
-    animation: MoveUpDown 1s infinite  alternate;
-    -moz-animation: MoveUpDown 1s infinite  alternate; /* Firefox */
-    -webkit-animation: MoveUpDown 1s infinite  alternate; /* Safari and Chrome */
-    -o-animation: MoveUpDown 1s infinite  alternate; /* Opera */
     position: relative;
+    animation: none;
+    -webkit-animation: none;
+    -moz-animation: none;
+    -o-animation: none;
 
     @media(max-width: 992px){
         @include margin-padding(39px 0 73px 0, 0);
@@ -143,14 +182,5 @@
 
     &:hover{
         cursor: pointer;
-    }
-}
-
-@keyframes MoveUpDown {
-    0%, 100% {
-        bottom: 0;
-    }
-    50% {
-        bottom: 100px;
     }
 }
