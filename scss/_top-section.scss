@@ -1,39 +1,34 @@
 // Background shapes
 .background-shapes{
-    overflow: hidden;
     // Background - Shape 2
     &::before{
         content: url("../images/Shape2.svg");
-        // overflow-x: visible;
-        // overflow-y: visible;
+        overflow: hidden;
+        max-width: 100vw;
         @include absolute(-150px, none, none, 0);
-        // @include transition;
         z-index: -1;
 
         @media (max-width: 780px){
+            max-width: 200vw; // for correct display on mobile devices
             @include absolute(-300px, none, none, -450px);
-        //     @include transition;
         }
     }
+
     // Background - Shape 1
     &::after{
         content: url("../images/Shape1.svg");
-        // overflow-x: visible;
-        // overflow-y: visible;
+        overflow: hidden;
+        max-width: 100vw;
         @include absolute(-150px, none, none, 50px);
         transform: scale(1.2);
-        // @include transition;
         z-index: -1;
 
         @media (max-width: 780px){
+            max-width: 113vw; // for correct display on mobile devices
             @include absolute(-50px, none, none, -100px);
-        //     @include transition;
         }
     }
 }
-
-
-
 
 .top-section{
     @include size(100%, 100%);
@@ -45,6 +40,7 @@
         margin-bottom: 35px;
     }
 
+// Background shapes - DISABLED
     // Background - Shape 2
     // &::before{
     //     content: url("../images/Shape2.svg");

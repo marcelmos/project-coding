@@ -3,6 +3,7 @@ nav {
     background-color: $text-lightest;
     position: fixed;
     top: 0;
+    left: 0;
     z-index: 100;
     line-height: 70px;
 
@@ -18,7 +19,7 @@ nav {
     }
 
     .nav-item-list{
-        float: right;
+        text-align: right;
 
         .nav-item{
             @include inline-block;
